@@ -113,6 +113,56 @@ git remote show <remote-name>
 ```
 Shows detail info of the mentioned remote.
 
+```bash
+git branch <branch-name>
+```
+Create a locale branch.
+
+```bash
+git checkout <branch-name>
+```
+Switch from current brach to <branch-name> specified.
+  
+```bash
+git merge <branch-name>
+```
+Merges <branch-name> specified with the current branch.
+  
+```bash
+git branch
+```
+List all the branches. The current branch is marked with an * symbol.
+
+```bash
+git branch -d <branch-name>
+```
+Deletes the branch from youre locale working tree.
+
+```bash
+git stash save <message>
+```
+Stashing removes the changes from the working tree and saves it so that those changes can be applied later. Each stash is stored with a stash id and all stashs are shared between the branches.
+
+```bash
+git stash list
+```
+Lists all the saved stashs.
+
+```bash
+git stash apply <stash-id>
+```
+Applies the changes saved the mentioned <stash-id>. This does not delete the stash after applying the stash changes.
+  
+```bash
+git stash pop
+```
+Applies the latest/last stashed changes and deletes the stash from stash list.
+
+```bash
+git stash drop <stash-id>
+```
+Deletes the mentioned <stash-id> and removes it from the list.
+
 ## Contributing and Licence
 This repo is only for educational purpose. Feel free to do clone, modify and share this repository.
 If you find an error or have questions, feel free to write comments or raise an issue. If you want to contribute, feel free to hand in a 
